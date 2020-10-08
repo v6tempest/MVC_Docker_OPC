@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Code_Examples\\CoreWebApps\\MVC_Docker_OPC\\MVC_Docker_OPC.csproj": {}
+    "C:\\Code_examples\\CoreWebApps\\MVC_Docker_OPC\\MVC_Docker_OPC.csproj": {}
   },
   "projects": {
-    "C:\\Code_Examples\\CoreWebApps\\MVC_Docker_OPC\\MVC_Docker_OPC.csproj": {
+    "C:\\Code_examples\\CoreWebApps\\MVC_Docker_OPC\\MVC_Docker_OPC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Code_Examples\\CoreWebApps\\MVC_Docker_OPC\\MVC_Docker_OPC.csproj",
+        "projectUniqueName": "C:\\Code_examples\\CoreWebApps\\MVC_Docker_OPC\\MVC_Docker_OPC.csproj",
         "projectName": "MVC_Docker_OPC",
-        "projectPath": "C:\\Code_Examples\\CoreWebApps\\MVC_Docker_OPC\\MVC_Docker_OPC.csproj",
+        "projectPath": "C:\\Code_examples\\CoreWebApps\\MVC_Docker_OPC\\MVC_Docker_OPC.csproj",
         "packagesPath": "C:\\Users\\Mark\\.nuget\\packages\\",
-        "outputPath": "C:\\Code_Examples\\CoreWebApps\\MVC_Docker_OPC\\obj\\",
+        "outputPath": "C:\\Code_examples\\CoreWebApps\\MVC_Docker_OPC\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Mark\\AppData\\Roaming\\NuGet\\NuGet.Config"
