@@ -1,21 +1,21 @@
 apiVersion: apps.openshift.io/v1
 kind: DeploymentConfig
 metadata:
-  name: qotd
+  name: mvc-core-webapp
   labels:
-    app: qotd
+    app: mvc-core-webapp
 spec:
   selector:
-    app: qotd
+    app: mvc-core-webapp
   replicas: 1
   template:
     metadata:
       labels:
-        app: qotd
+        app: mvc-core-webapp
     spec:
       containers:
-        - name: qotd
-          image: image-registry.openshift-image-registry.svc:5000/pipelines-tutorial/qotd:latest
+        - name: mvc-core-webapp
+          image: image-registry.openshift-image-registry.svc:5000/mvc-core-app/mvc-core-webapp:latest
           imagePullPolicy: Always
           ports:
             - containerPort: 10000
@@ -28,5 +28,5 @@ spec:
       - qotd
       from:
         kind: ImageStreamTag
-        name: qotd:latest
+        name: mvc-core-webapp:latest
     type: ImageChange
