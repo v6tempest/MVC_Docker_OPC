@@ -21,4 +21,3 @@ spec:
           ports:
             - containerPort: 10000
               protocol: TCP
-  
