@@ -1,4 +1,4 @@
-apiVersion: apps.openshift.io/v1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: mvc-core-webapp
@@ -6,12 +6,13 @@ metadata:
     app: mvc-core-webapp
 spec:
   selector:
-    app: mvc-core-webapp
+    matchLabels:
+      deployment: mvc-core-webapp
   replicas: 3
   template:
     metadata:
       labels:
-        app: mvc-core-webapp
+        deployment: mvc-core-webapp
     spec:
       containers:
         - name: mvc-core-webapp
