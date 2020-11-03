@@ -6,10 +6,10 @@ metadata:
   name: mvc-core-webapp
 spec:
   ports:
- - name: 8080-tcp
-      port: 8080
-      targetPort: 8080
-      protocol: TCP
+  - name: 8080-tcp
+    port: 8080
+    targetPort: 8080
+    protocol: TCP
   selector:
     app: mvc-core-webapp
   sessionAffinity: None
