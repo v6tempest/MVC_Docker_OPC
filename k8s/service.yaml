@@ -6,18 +6,10 @@ metadata:
   name: mvc-core-webapp
 spec:
   ports:
-  - name: 10000-tcp
-    port: 10000
+  - name: 8080-tcp
+    port: 8080
+    targetPort: 8080
     protocol: TCP
-    targetPort: 10000
-  - name: 8443-tcp
-    port: 8443
-    protocol: TCP
-    targetPort: 8443
-  - name: 8778-tcp
-    port: 8778
-    protocol: TCP
-    targetPort: 8778
   selector:
     app: mvc-core-webapp
   sessionAffinity: None

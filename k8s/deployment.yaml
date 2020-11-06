@@ -7,18 +7,20 @@ metadata:
 spec:
   selector:
     matchLabels:
-      deployment: mvc-core-webapp
+      app: mvc-core-webapp
   replicas: 3
   template:
     metadata:
       labels:
-        deployment: mvc-core-webapp
+        app: mvc-core-webapp
     spec:
       containers:
         - name: mvc-core-webapp
           image: image-registry.openshift-image-registry.svc:5000/mvc-core-app/mvc-core-webapp:latest
           imagePullPolicy: Always
           ports:
-            - containerPort: 10000
+            - containerPort: 8080
+              protocol: TCP
+            - containerPort: 9090
               protocol: TCP
   

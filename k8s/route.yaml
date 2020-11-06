@@ -6,7 +6,7 @@ metadata:
   name: mvc-core-webapp
 spec:
   port:
-    targetPort: 10000-tcp
+    targetPort: 8080-tcp
   to:
     kind: Service
     name: mvc-core-webapp
