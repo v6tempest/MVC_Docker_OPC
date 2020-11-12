@@ -23,7 +23,7 @@ objects:
         app.kubernetes.io/part-of: ${APP_GROUP}
       name: ${APP_NAME}
     spec:
-      replicas: 2
+      replicas: 3
       selector:
         matchLabels:
           app: ${APP_NAME}
